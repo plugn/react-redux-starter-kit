@@ -1,12 +1,78 @@
-/*
-Application Settings Go Here
-------------------------------------
-This file acts as a bundler for all variables/mixins/themes, so they
-can easily be swapped out without `core.scss` ever having to know.
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-For example:
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 
-@import './variables/colors';
-@import './variables/components';
-@import './themes/default';
-*/
+html {
+  color: $color-white;
+  font-size: $font-size-5;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p {
+  font-size: $font-size-6;
+  margin-top: $margin-2;
+  margin-bottom: $margin-2;
+  color: $color-lowgray;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: $font-size-2;
+  margin-bottom: $margin-3;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: $font-size-3;
+  margin-bottom: $margin-3;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: $font-size-4;
+  margin-bottom: $margin-3;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: $font-size-5;
+  margin-bottom: $margin-3;
+}
+
+input:focus,
+select:focus {
+  color: $color-white !important;
+  outline: #8e8e8e auto 1px !important;
+}
+
+label:hover {
+  color: $color-white;
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+a {
+  color: white;
+}
