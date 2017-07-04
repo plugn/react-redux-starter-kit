@@ -93,11 +93,11 @@ config.module.rules.push({
 const extractStyles = new ExtractTextPlugin({
   filename: 'styles/[name].[contenthash].css',
   allChunks: true,
-  disable: __DEV__,
+	// disable: __DEV__,
 })
 
 config.module.rules.push({
-  test: /\.(sass|scss)$/,
+	test: /\.(css|sass|scss)$/,
   loader: extractStyles.extract({
     fallback: 'style-loader',
     use: [
