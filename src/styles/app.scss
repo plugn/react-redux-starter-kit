@@ -1,3 +1,17 @@
 body {
 	font-family: Roboto, sans-serif;
 }
+
+.pos-rel {
+	position: relative;
+}
+
+.scroll-container {
+	overflow-x: visible;
+	overflow-y: scroll;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 1px;
+	position: absolute;
+}
