@@ -25,31 +25,5 @@
 			width: 200px;
 		}
 	}
-
-	@media all and (max-width: 600px) {
-		/* Too narrow to support three columns */
-		main {
-			flex-flow: column;
-		}
-		main > article, main > nav, main > aside {
-			/* Return them to document order */
-			order: 0;
-			width: auto;
-		}
-	}
-}
-
-.pos-rel {
-	position: relative;
-}
-
-.scroll-container {
-	overflow-x: visible;
-	overflow-y: scroll;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	top: 1px;
-	position: absolute;
 }
 
