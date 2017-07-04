@@ -1,16 +1,12 @@
 import React from 'react'
 import './AppLayout.scss'
+import article from './article.json'
+
+function createMarkup() {
+	return {__html: JSON.stringify(article.text)}
+}
 
 class AppLayout extends React.Component {
-
-	/*
-	 constructor(props) {
-	 super(props);
-	 this.setState({
-	 color: 'blue'
-	 })
-	 }
-	 */
 
 	render() {
 		return (
@@ -18,7 +14,9 @@ class AppLayout extends React.Component {
 				<header>header</header>
 				<main>
 					<nav>nav</nav>
-					<aside>aside</aside>
+					<aside className="pos-rel">
+						<div className="scroll-container" dangerouslySetInnerHTML={createMarkup()}></div>
+					</aside>
 					<article>article</article>
 				</main>
 				{/*<footer>footer</footer>*/}
@@ -27,5 +25,8 @@ class AppLayout extends React.Component {
 	}
 
 }
+AppLayout.defaultProps = {
+	article
+}
 
-export default AppLayout
+export default AppLayout;
