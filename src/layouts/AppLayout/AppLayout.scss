@@ -1,21 +1,32 @@
-.app-layout {
-	height: 100%;
+
+#app-layout {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	* {
+		margin: 2px;
+	}
+
+	header, footer {
+		background-color: dimgray;
+		color: #eee;
+		padding: .5rem;
+		min-height: 40px;
+	}
 
 	main {
-		display: flex;
-	}
-	main > article {
-		order: 2;
-		min-width: 12em;
 		flex: 1;
-	}
-	main > nav {
-		order: 1;
-		width: 200px;
-	}
-	main > aside {
-		order: 3;
-		width: 200px;
+		display: flex;
+		background-color: aquamarine;
+		article {
+			flex: 1;
+			//overflow-y: auto;
+			//min-height: 0px;
+		}
+
+		nav, aside {
+			width: 200px;
+		}
 	}
 
 	@media all and (max-width: 600px) {
