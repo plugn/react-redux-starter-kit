@@ -40,17 +40,25 @@ function UL() {
 }
 function FlexLayout() {
 	return (
-		<div className="flex-col">
+		<div className="flex-col debug">
 			<header>awesome site header</header>
+
 			<div className="flex-row">
 				<div className="scroll">
 					<UL/>
 				</div>
-				<div className="">ffff
+
+				<div className="flex-col">
+					<div className="stretch">1</div>
+					<div className="stretch">1</div>
 				</div>
-				<div className="stretch scroll"> stretchy content <UL/></div>
+
+				<div className="stretch scroll"> stretchy content
+					<UL/>
+				</div>
 
 			</div>
+
 			<footer></footer>
 		</div>
 	)
