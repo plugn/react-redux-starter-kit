@@ -38,18 +38,17 @@ function UL() {
 
 	)
 }
-function FlexLayout2() {
+function FlexLayout() {
 	return (
 		<div className="flex-col">
-			<header></header>
+			<header>awesome site header</header>
 			<div className="flex-row">
 				<div className="scroll">
 					<UL/>
 				</div>
-				<div className="scroll">
-					<UL/>
+				<div className="">ffff
 				</div>
-				<div className="stretch"> stretchy content</div>
+				<div className="stretch scroll"> stretchy content <UL/></div>
 
 			</div>
 			<footer></footer>
@@ -57,55 +56,5 @@ function FlexLayout2() {
 	)
 }
 
-function FlexLayout() {
-	return (
 
-		<div className="flex-layout col">
-
-			<header></header>
-
-			<article>
-				<section className="scroll">
-					<ul>
-						<li>0</li>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
-						<li>6</li>
-						<li>7</li>
-						<li>8</li>
-						<li>9</li>
-						<li>10</li>
-						<li>11</li>
-						<li>12</li>
-					</ul>
-				</section>
-				<section className="flex"></section>
-				<section className="scroll">
-					<ul>
-						<li>0</li>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
-						<li>6</li>
-						<li>7</li>
-						<li>8</li>
-						<li>9</li>
-						<li>10</li>
-						<li>11</li>
-						<li>12</li>
-					</ul>
-
-				</section>
-			</article>
-			<footer></footer>
-
-		</div>
-	)
-}
-
-export default FlexLayout2;
+export default FlexLayout;
