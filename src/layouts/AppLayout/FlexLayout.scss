@@ -13,13 +13,16 @@ section, li {
 
 	header,
 	footer {
-		min-height: 50px;
-		flex: 1;
+		flex: 0 0 50px;
+		//min-height: 50px;
+		//flex: 1;
 	}
 
 	article {
 		display: flex;
 		flex: 12;
+		min-height: 0; // needed for
+		min-width: 0;
 	}
 
 	section {

@@ -30,6 +30,7 @@ function FlexLayout() {
 						<li>12</li>
 					</ul>
 				</section>
+				<section id="center"></section>
 				<section id="right">
 					<ul>
 						<li>0</li>
@@ -48,7 +49,6 @@ function FlexLayout() {
 					</ul>
 
 				</section>
-				<section id="center"></section>
 			</article>
 			<footer></footer>
 
