@@ -1,5 +1,6 @@
 // We only need to import the modules necessary for initial render
 import AppLayout from '../layouts/AppLayout/AppLayout'
+import FlexLayout from '../layouts/AppLayout/FlexLayout'
 import CoreLayout from '../layouts/PageLayout/PageLayout'
 import Home from './Home'
 import CounterRoute from './Counter'
@@ -9,7 +10,7 @@ import CounterRoute from './Counter'
 
 export const createRoutes = (store) => ({
   path        : '/',
-	component: AppLayout,
+	component: FlexLayout,
   indexRoute  : Home,
   childRoutes : [
     CounterRoute(store)
