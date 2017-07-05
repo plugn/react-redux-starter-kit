@@ -2,36 +2,74 @@ section, li {
 	outline: 1px red dashed;
 }
 
-//html,
-//body {
-//	height: 100%;
-//}
-.flex-layout {
-	height: 100%;
+.flex-row {
 	display: flex;
+	width: 100%;
+	flex-direction: row;
+	min-height: 0; //  FF flexbox overflow
+}
+
+.flex-col {
+	display: flex;
+	height: 100%;
 	flex-direction: column;
+	min-width: 0;
+}
+
+.flex-col, .flex-row {
+	.stretch {
+		flex: 1;
+	}
+}
+
+.scroll {
+	overflow: auto;
+}
+
+header,
+footer {
+	flex: 0 0 50px;
+	//min-height: 50px;
+	//flex: 1;
+}
+
+
+.flex-layout {
+
+	display: flex;
+	min-height: 0; //  FF flexbox overflow
+	min-width: 0;
+
+	&.col {
+		height: 100%;
+		flex-direction: column;
+	}
+	&.row {
+		width: 100%;
+		flex-direction: row;
+	}
 
 	header,
 	footer {
-		flex: 0 0 50px;
-		//min-height: 50px;
-		//flex: 1;
+		//flex: 0 0 50px;
+		height: 50px;
+
 	}
 
 	article {
 		display: flex;
-		flex: 12;
-		min-height: 0; // needed for
+		//flex: 1;
+		// height: 100%;
+		min-height: 0; //  FF flexbox overflow
 		min-width: 0;
 	}
 
-	section {
-		flex: 1;
+	.scroll {
 		overflow: auto;
 	}
 
-	#center {
-		flex: 3;
+	.flex {
+		flex: 1;
 	}
 }
 
