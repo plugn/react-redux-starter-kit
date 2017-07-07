@@ -39,6 +39,7 @@
     "reflexbox": "^3.0.0-0",
 	  "styled-components": "^2.1.1",
 	  "tachyons": "^4.7.4",
+	  "topcoat-grid": "github:topcoat/grid",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
