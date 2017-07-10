@@ -3,6 +3,7 @@ import {IndexLink, Link} from 'react-router'
 import './FlexLayout.scss'
 import '../../components/topcoat/icon.css';
 import populateJSX from '../../util/populateJSX';
+import LayerTree from '../../components/LayerTree'
 
 function TcHeader() {
 	return (
@@ -113,7 +114,9 @@ function TopLayout({children}) {
 				</div>
 
 				<div className="stretch scroll"> stretchy content
-					<UL/>
+					{/*<UL/>*/}
+					<LayerTree/>
+
 				</div>
 
 			</div>
