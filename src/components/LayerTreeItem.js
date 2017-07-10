@@ -24,7 +24,6 @@ function LayerTreeFolder({model, itemIndex, onItemClick, isOpen}) {
 		<li className="tile tile__folder">
 			<span className="tile__name bold" onClick={onItemClick}>{ model.id } [ {isOpen ? '-' : '+'} ]</span>
 
-			(
 			<ul hidden={!isOpen} className="tile__list" data-group={itemIndex}>
 				<li hidden></li>
 
@@ -36,7 +35,7 @@ function LayerTreeFolder({model, itemIndex, onItemClick, isOpen}) {
 							dataGroup={itemIndex}/>
 				)}
 			</ul>
-			)
+
 		</li>
 
 	)

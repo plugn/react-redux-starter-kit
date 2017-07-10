@@ -1,23 +1,23 @@
 export default [
-	{name: 'ungrouped 1'},
-	{name: 'ungrouped 2'},
+	{id: 'ungrouped 1'},
+	{id: 'ungrouped 2'},
 	{
-		name: 'Group A',
+		id: 'Group A',
 		children: [
-			{name: 'A item 1'},
-			{name: 'A item 2'},
-			{name: 'A item 3'},
+			{id: 'A item 1'},
+			{id: 'A item 2'},
+			{id: 'A item 3'},
 		]
 	},
-	{name: 'ungrouped 3'},
+	{id: 'ungrouped 3'},
 	{
-		name: 'Group B',
+		id: 'Group B',
 		children: [
-			{name: 'B item 1'},
-			{name: 'B item 2'},
-			{name: 'B item 3'},
+			{id: 'B item 1'},
+			{id: 'B item 2'},
+			{id: 'B item 3'},
 		]
 	},
-	{name: 'ungrouped 5'},
-	{name: 'ungrouped 7'},
+	{id: 'ungrouped 5'},
+	{id: 'ungrouped 7'},
 ];
